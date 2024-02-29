@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white overflow-hidden">
+        <div class="card fixed -top-full w-full h-50 bg-zinc-800 p-6 transition-all duration-1000 ease">
+            <div class="flex justify-between mb-4">
+                <h1 class="text-2xl capitalize">My Cart</h1>
+                <div class="flex gap-3 items-end">
+                    <h5 class="capitalize font-semibold text-lg">Total: ₹<span id="total">0</span></h5>
+                <button class="close p-3 py-1 bg-red-800 rounded capitalize hover:bg-red-500">close</button>
+                </div>
+            </div>
+            <hr>
+            <h1 id="empty" class="text-2xl font-bold text-center pt-8">your cart is empty!</h1>
+            <div class="cartItem py-4 flex gap-6 overflow-x-auto ">
+                <!-- <div class="CartProduct p-3 bg-zinc-700 w-fit rounded">
+                       <div class="w-32 h-32  overflow-hidden rounded">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                       </div>
+                       <h4 class="capitalize font-semibold text-md">fresh orange</h4>
+                       <h5 class="capitalize font-semibold text-sm">$50</h5>
+                       <button class="p-3 py-1 bg-blue-600 rounded mt-1">add</button>
+                </div> -->
+            </div>
+            <button id="buy" class="p-3 py-1 bg-orange-600  mt-1 hidden">PLACE ORDER</button>
+        </div>
+        <div class="p-6">
+            <button class="open bg-blue-600 p-3 py-2 rounded hover:bg-blue-900">SHOW CART ITEM</button>
+            <div class="flex justify-between items-end py-2 pt-12">
+                <h1 class="text-3xl  capitalize">Product</h1>
+            </div>
+            <hr>
+            <div class="w-full  py-1 flex gap-3 categories flex-wrap">
+                <button id="all" class="p-3 py-1 border-2 mt-1 hover:bg-zinc-100 hover:text-black">ALL</button>
+                <div class="category flex gap-3 flex-wrap">
+                </div>
+            </div>
+            <div id="container" class="flex gap-10 pt-8  flex-wrap justify-center sm:justify-start">
+                <!-- <div class="product p-3 w-fit bg-zinc-800">
+                    <div class="w-56 h-52 overflow-hidden bg-blue-600">
+                        <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <h3 class="capitalize text-xl">product</h3>
+                    <p class="text-sm">lorem ipsum</p>
+                    <h4 class="text-lg mt-4 ">₹<span class="price">500.00</span> <span class="text-sm line-through text-zinc-500">₹1000</span></h4>
+                    <button class="p-3 py-1 bg-orange-600 w-full mt-1">ADD TO CART</button>
+                </div> -->
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
